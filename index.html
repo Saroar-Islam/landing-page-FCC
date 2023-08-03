@@ -24,13 +24,11 @@
             </div>
 
             <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link"><a href="#Product">Product</a></li>
-                    <li class="nav-link"><a href="#lesson"> Lesson </a></li>
-                    <li class="nav-link">
-                        <a href="#Subscribe"> Subscribe </a>
-                    </li>
-                    <li class="nav-link"><a href="#Review"> Reviews </a></li>
+                <ul class="nav-ul">
+                    <li><a class="nav-link" href="#Product">Product</a></li>
+                    <li><a class="nav-link" href="#Lesson"> Lesson</a></li>
+                    <li><a class="nav-link" href="#Subscribe">Subscribe</a></li>
+                    <li><a class="nav-link" href="#Reviews">Reviews</a></li>
                 </ul>
             </nav>
         </header>
@@ -110,16 +108,17 @@
             </div>
         </section>
 
-        <section id="video-container">
+        <section class="video-container">
             <iframe
+                controls
                 id="video"
                 src="https://cdn.pixabay.com/vimeo/408654189/singer-35867.mp4?width=640&hash=3f918dea3ba1c27d4059028220781541d66193d1"
             ></iframe>
         </section>
 
-        <section id="lesson">
-            <div id="lesson-container">
-                <div class="lesson-card">
+        <section id="Lesson">
+            <div id="Lesson-container">
+                <div class="Lesson-card">
                     <h2>1 Month Plan</h2>
                     <h3>$15.99</h3>
 
@@ -134,7 +133,7 @@
 
                     <button class="card">Select</button>
                 </div>
-                <div class="lesson-card">
+                <div class="Lesson-card">
                     <h2>3 Month Plan</h2>
                     <h3>$39.99</h3>
 
@@ -150,7 +149,7 @@
                     <button class="card">Select</button>
                 </div>
 
-                <div class="lesson-card">
+                <div class="Lesson-card">
                     <h2>6 Month Plan</h2>
                     <h3>$79.99</h3>
 
@@ -187,15 +186,15 @@
                 />
 
                 <input
+                    id="submit"
                     type="submit"
-                    id="sumbit"
                     value="Subscribe"
                     class="btn"
                 />
             </form>
         </secton>
 
-        <section id="Review">
+        <section id="Reviews">
             <div id="review-container">
                 <div class="review-card">
                     <div>

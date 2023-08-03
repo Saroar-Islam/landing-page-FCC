@@ -21,6 +21,7 @@ body {
     position: fixed;
     top: 0;
     height: 50px;
+    max-width: 100%;
 }
 
 #logo {
@@ -52,25 +53,25 @@ body {
     font-weight: 700;
 }
 
-#nav-bar ul {
+.nav-ul {
     display: flex;
     justify-content: center;
     width: 40vw;
     flex-wrap: wrap;
 }
 
-.nav-link {
+.nav-ul li {
     list-style: none;
     padding: 0px 1rem;
 }
 
-.nav-link a {
+.nav-link {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
-.nav-link a:hover {
+.nav-link:hover {
     color: var(--color-2);
 }
 
@@ -125,7 +126,7 @@ body {
     padding: 0 10px;
 }
 
-#video-container {
+.video-container {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -137,13 +138,13 @@ body {
     height: 400px;
 }
 
-#lesson {
+#Lesson {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 70px;
 }
 
-#lesson-container {
+#Lesson-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -152,7 +153,7 @@ body {
     border-radius: 2px;
 }
 
-.lesson-card {
+.Lesson-card {
     width: 250px;
     /* height: 400px; */
     border: 2px solid black;
@@ -161,25 +162,25 @@ body {
     text-align: center;
 }
 
-.lesson-card > h2 {
+.Lesson-card > h2 {
     padding: 10px;
     background-color: #ff2334;
 }
-.lesson-card h3 {
+.Lesson-card h3 {
     font-size: 1.5rem;
 
     font-family: cursive;
     color: slateblue;
 }
 
-.lesson-card li {
+.Lesson-card li {
     list-style: circle;
     padding: 15px 5px 0px 5px;
     font-size: 1rem;
     text-align: left;
 }
 
-.lesson-card button {
+.Lesson-card button {
     margin: 10px;
     padding: 5px 30px;
     cursor: pointer;
@@ -187,7 +188,7 @@ body {
     border-radius: 10px;
 }
 
-.lesson-card button:hover {
+.Lesson-card button:hover {
     background-color: var(--color-5);
     font-weight: bold;
 }
@@ -224,7 +225,7 @@ body {
     border-radius: 8px;
 }
 
-#sumbit {
+#submit {
     max-width: 150px;
     width: 100%;
     /* width: 200px; */
@@ -238,12 +239,12 @@ body {
     font-size: 1.1rem;
 }
 
-#sumbit:hover {
+#submit:hover {
     color: grey;
     background-color: hsl(0, 4%, 85%);
 }
 
-#Review {
+#Reviews {
     max-width: 1050px;
     margin: 100px auto 0 auto;
 }
@@ -332,9 +333,10 @@ footer div {
 /* --------all media Q------ */
 
 @media (max-width: 1024px) {
-    #header {
+    /* #header {
         position: relative;
-    }
+        max-width: 100%;
+    } */
 
     #logo-text1,
     #logo-text2,
@@ -370,9 +372,6 @@ footer div {
 }
 
 @media (max-width: 768px) {
-    .nav-link {
-        flex-basis: 50%;
-    }
     #video {
         height: 200px;
     }
@@ -381,13 +380,13 @@ footer div {
         max-width: 200px;
     }
 
-    #sumbit {
+    #submit {
         max-width: 100px;
     }
 }
 
 @media (max-width: 410px) {
-    .nav-link {
+    .nav-ul li {
         flex-basis: 100%;
     }
 }
